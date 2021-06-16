@@ -1,0 +1,29 @@
+{
+  "name": "qatest",
+  "version": "1.0.0",
+  "description": "projeto de automacao de teste utilizando cypress",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "eslint": "./node_modules/.bin/eslint --ext .js cypress",
+    "test": "cypress run --headless",
+    "test:us": "cypress run --headless --config integrationFolder=cypress\/integration\/seubarriga\/userStories\/",
+    "test:epic": "cypress run --headless --config integrationFolder=cypress\/integration\/seubarriga\/epic\/",
+    "test:api": "cypress run --headless --config integrationFolder=cypress\/integration\/api"
+  },
+  "author": "Leandro M. dos Santos",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^7.5.0"
+  },
+  "devDependencies": {
+    "@testing-library/cypress": "^7.0.6",
+    "@types/faker": "^5.5.6",
+    "babel-eslint": "^10.1.0",
+    "dayjs": "^1.10.4",
+    "eslint": "^7.27.0",
+    "eslint-plugin-cypress": "^2.11.3",
+    "eslint-plugin-jest": "^21.2.0",
+    "faker": "^5.5.3"
+  }
+}
