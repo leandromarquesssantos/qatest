@@ -26,7 +26,7 @@ Ao invés de utilizar:
 
     cy.get('.button-save').click();
 
-Se procura por um botão com texto Salvar:
+Procura-se por um botão com texto Salvar:
 
     cy.findByRole('button', { name: 'Salvar'}).click();
 
